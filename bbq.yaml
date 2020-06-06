@@ -1,0 +1,36 @@
+esphome:
+  name: bbq
+  platform: ESP8266
+  board: d1_mini
+
+wifi:
+  ssid: "Lammbock"
+  password: "jingundmatthias1"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Bbq Fallback Hotspot"
+    password: "jCq2aNPJLy5u"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: "6dQJJ56#n^RjEw^c"
+
+ota:
+  password: "6dQJJ56#n^RjEw^c"
+
+spi:
+  miso_pin: D6
+  clk_pin: D5
+
+sensor:
+  - platform: max31855
+    name: "Grill Temperatur"
+    cs_pin: D8
+    update_interval: 10s
+
