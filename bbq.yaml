@@ -4,8 +4,8 @@ esphome:
   board: d1_mini
 
 wifi:
-  ssid: "Lammbock"
-  password: "jingundmatthias1"
+  ssid: <SSID>
+  password: <SSID_PASSWORD>
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
@@ -30,7 +30,7 @@ spi:
 
 sensor:
   - platform: max31855
-    name: "Grill Temperatur"
+    name: "BBQ Temperature"
     cs_pin: D8
     update_interval: 10s
 
