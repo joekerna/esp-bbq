@@ -10,3 +10,6 @@ WeMos D1 Mini (ESP8266 microcontroller)
 Max31855 Module
 
 K-type thermocouple
+
+### Software prerequisites
+[ESPHome](https://esphome.io/): Check `esphome version` to verify.
